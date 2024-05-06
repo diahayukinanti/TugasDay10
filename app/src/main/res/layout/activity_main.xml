@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="#F1C5D4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text=" ୨୧ ‧₊˚WARUNG MAKAN KOCAK˚₊‧ ୨୧ "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#EC7AA0"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/makananTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Makanan"
+        android:textColor="#E3EBEF"
+        android:layout_below="@+id/tvTitle"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:id="@+id/serviceRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makananTV"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/nasgorRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nasi Goreng"
+            android:textColor="#BA295A"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:id="@+id/miegorengRadioButton"
+            android:text="Mie Goreng"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="#BA295A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioButton
+            android:id="@+id/mierebusRadioButton"
+            android:text="Mie Rebus"
+            android:textColor="#BA295A"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/nasiudukRadioButton"
+            android:text="Nasi Uduk"
+            android:textColor="#BA295A"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/minumanTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Minuman"
+        android:textColor="#E3EBEF"
+        android:layout_below="@+id/serviceRadioGroup"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:id="@+id/minumanRadioGroup"
+        android:layout_below="@id/minumanTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/jerukRadioButton"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="Es Jeruk"
+            android:textColor="#EC789F" />
+
+        <RadioButton
+        android:id="@+id/tehRadioButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/minumanTV"
+        android:text="Teh Es"
+        android:textColor="#EC789F" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/porsiTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serviceRadioGroup"
+        android:layout_marginTop="76dp"
+        android:text="Jumlah Porsi"
+        android:textColor="#E3EBEF"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/porsiTV"
+        android:layout_marginTop="14dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/jumlahporsi" />
+    </com.google.android.material.textfield.TextInputLayout>'
+
+    <Button
+        android:id="@+id/btnproses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan"
+        android:textColor="@color/white"
+        android:layout_below="@+id/pesanan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#C2185B" />
+
+
+</RelativeLayout>
